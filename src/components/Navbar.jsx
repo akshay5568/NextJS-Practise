@@ -12,6 +12,7 @@ const Navbar = () => {
       <Link href={`/todo`}>Todo App Useing NextJs</Link>
       <Link href={`/dummy-data`}>Data From Dummy</Link>
       <Link href={`/server-side-data-rendering`}>Server</Link>
+      <Link href={`/signin`}>SignIn</Link>
       </div>
     </div>
   );

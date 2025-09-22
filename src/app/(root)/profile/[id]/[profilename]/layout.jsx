@@ -2,7 +2,7 @@ import Dashboard from "@/components/Dashboard";
 
 const ProfileNameLayout = ({ children }) => {
   return (
-    <div>
+    <div className="w-full">
       <Dashboard />
       {children} 
     </div>
