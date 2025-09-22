@@ -27,7 +27,7 @@ const Todo = () => {
   return (
     <div className="p-3">
       <h1>
-        Hello, From Todo app using NextJs and it is still under construnction
+        Hello, From Todo app using NextJs and it is still under construnction   
         mode....
       </h1>
 

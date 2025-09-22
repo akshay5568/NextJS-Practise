@@ -13,6 +13,7 @@ const Navbar = () => {
       <Link href={`/dummy-data`}>Data From Dummy</Link>
       <Link href={`/server-side-data-rendering`}>Server</Link>
       <Link href={`/signin`}>SignIn</Link>
+      <Link href={`/weather-app`}>Weather APP</Link>
       </div>
     </div>
   );
