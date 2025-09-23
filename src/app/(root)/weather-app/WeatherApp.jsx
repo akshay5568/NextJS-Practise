@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState } from "react";   
 
 const WeatherApp = () => {
     const [city , setCity ]= useState("");
@@ -21,14 +21,12 @@ const WeatherApp = () => {
               className="border-1 border-black"
               placeholder="City Name"
               value={city}
-              onChange={(e) => setCity(e.target.value)}
+              onChange={(e) => setCity(e.target.value)}   
             />
             <button>Submit</button>
           </form>
         </div>
-
-
-      </div>
+    </div>
 
       {cityDetails && <div className="mt-10">
           <h1>Details</h1>
