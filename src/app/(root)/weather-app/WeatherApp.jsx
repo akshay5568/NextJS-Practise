@@ -32,7 +32,7 @@ const WeatherApp = () => {
           <h1>Details</h1>
           <div>
               <div>{cityDetails?.sys.country}</div>
-              <div>{cityDetails?.weather[0].description}</div>
+              <div>{cityDetails?.weather[0].description}</div>   
             
           </div>
       </div>}
