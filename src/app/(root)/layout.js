@@ -1,11 +1,13 @@
 
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import LeftComponent from "@/components/LeftComponent";
-import RightComponent from "@/components/RightComponent";
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import LeftComponent from '../../components/LeftComponent';
+import RightComponent from '../../components/RightComponent';
+import { auth } from '@clerk/nextjs/server';
 
 
-export default function RootLayout({ children }) {
+
+export default async function RootLayout({ children }) {
   const link = [
     {link:"/",name:"Home"},
     {link:"/about",name:"About"},
@@ -13,9 +15,13 @@ export default function RootLayout({ children }) {
     {link:"/",name:"Jobs"},
     {link:"/",name:"Contect"}
   ];
+
+  const {isAuthenticated} = await auth();
+  
   return (
     <main>
-        <Navbar/>
+
+     <Navbar user={isAuthenticated}/>
         <div className="flex items-center">
         <LeftComponent data={link}/>  
         {children}
